@@ -1,0 +1,97 @@
+#CONTAINER {
+    display: flex;
+}
+
+#article, #solar_system {
+    flex: 1;
+    border: 2px solid lightgray;
+}
+
+#article {
+    margin-right: 20px;
+    width: 50%;
+    background-color: bisque;
+}
+
+#solar_system {
+    background-color :dimgrey ;
+}
+
+#canvas {
+    padding : 10px;
+}
+
+article {
+    padding : 10px;
+    font-weight: bold;
+}
+
+h1 {
+    color:rebeccapurple;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+    text-shadow: 5px 5px 10px lightgray;
+}
+
+h2 {
+    color: rgb(145, 40, 40);
+    text-align: center;
+    font-family: verdana;
+    font-size: 18px;
+    text-shadow: 5px 5px 10px lightgray;
+}
+
+p {
+    color : black;
+    text-align: center;
+    font-family: verdana;
+    font-size: 14px;
+    text-align: left;
+    font-style: italic;
+}
+
+body {
+    background-color:cornsilk;
+}
+
+.start, .stop {
+    text-align: center;
+    text-decoration: none;
+    background-color :gold;
+    font-family: Arial;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    padding: 15px 32px;
+}
+
+.buttonContainer {
+    text-align: center;
+    display: flex;
+}
+
+.button1, .button2 {
+    flex: 1;
+}
+
+div {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.audio {
+    text-align: left;
+}
+
+h3 {
+    text-align : left;
+    font-size : 18px;
+    color : blueviolet;
+    font-weight : bold; 
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 5px 5px 10px lightgray;
+}
+
+

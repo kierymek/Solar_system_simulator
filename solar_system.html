@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Solar system simulation</title>
+        <script src="solar_system.js"></script>
+        <script src="time_worker.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="CONTAINER">
+            <div id="article">
+                <article>
+                    <h1>Symulacja układu słonecznego</h1>
+                    <p>Celem projektu jest zasymulowanie ruchu planet Układu Słonecznego z wykorzystaniem
+                         równań fizycznych opisujących siły grawitacji oddziałujące między planetami. 
+                         We współczesnej fizyce grawitację opisuje ogólna teoria względności, 
+                         w której grawitacja nie jest oddziaływaniem a konsekwencją zakrzywienia czasoprzestrzeni 
+                         przez materię. Poza ogólną teorią względności grawitacja jest jednym z czterech 
+                         oddziaływań podstawowych, jest opisana prawem powszechnego 
+                         ciążenia sformułowanym przez Isaaca Newtona.
+                        </p>
+                    <h2>Prawo powszechnego ciążenia</h2>
+                    <p>Między dowolną parą ciał posiadających masy pojawia się siła przyciągająca, 
+                        która działa na linii łączącej ich środki mas, a jej wartość rośnie z 
+                        iloczynem ich mas i maleje z kwadratem odległości.</p>
+                    <p>$$ {\displaystyle f = G \frac{m_1 m_2}{r^2}} $$</p>
+                    <p>Jako, że masa Słońca jest nieporównywalnie większa w stosunku do innych planet, 
+                        w przypadku naszej symulacji siły przyciągania innych planet oddziałujące 
+                        na Słońce mają pomijalnie niską wartość.</p>
+                    <p>Układ heliocentryczny</p>
+                    <div class="buttonContainer">
+                        <div class="button1">
+                            <button class="start" onClick=init();>start</button>
+                        </div>
+                        <div class="button2">
+                            <button class="stop" onClick=stop();>stop</button>
+                        </div>
+                    </div>
+                    <p>Układ geocentryczny</p>
+                    <div class="buttonContainer">
+                        <div class="button1">
+                            <button class="start" onClick=init2();>start</button>
+                        </div>
+                        <div class="button2">
+                            <button class="stop" onClick=stop1();>stop</button>
+                        </div>
+                    </div>
+                    <p>Dźwięki galaktyki</p>
+                    <div class="audio">
+                        <audio controls id="music">
+                            <source src="music.mp3" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <h3>Czas który upłynął od rozpoczęcia symulacji:</h3>
+                    <p id="result"></p>
+                </article>
+            </div>
+            <div id="solar_system">
+                <canvas id="canvas" width="900" height="900"></canvas>
+            </div>
+        </div>
+    </body>
+</html>
